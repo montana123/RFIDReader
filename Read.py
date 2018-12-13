@@ -76,6 +76,7 @@ while continue_reading:
         if status == MIFAREReader.MI_OK:
             MIFAREReader.MFRC522_Read(8)
             MIFAREReader.MFRC522_StopCrypto1()
+			continue_reading = false
         else:
             print "Authentication error"
 
